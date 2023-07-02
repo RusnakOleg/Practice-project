@@ -1,6 +1,5 @@
 package edu.practice.workWithJson;
 import edu.practice.domain.Student;
-import edu.practice.workWithJson.JsonConverter;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -17,7 +16,7 @@ public class StudentsDataSource {
 
     public List<Student> readStudents() {
         try {
-            Path path = Paths.get("contact.json");
+            Path path = Paths.get("src/main/java/edu/practice/workWithJson/student.json");
             String s = Files.readString(path);
             return jsonConverter.fromJson(s);
         } catch (IOException e) {
@@ -27,9 +26,9 @@ public class StudentsDataSource {
 
     public void writeStudents(List<Student> students) {
         try {
-            Path path = Paths.get("contact.json");
-            String jsonContact = jsonConverter.toJson(students);
-            Files.writeString(path, jsonContact);
+            Path path = Paths.get("src/main/java/edu/practice/workWithJson/student.json");
+            String jsonStudent = jsonConverter.toJson(students);
+            Files.writeString(path, jsonStudent);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

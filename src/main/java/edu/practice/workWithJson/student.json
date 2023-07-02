@@ -1,0 +1,29 @@
+[
+  {
+    "id": 72407,
+    "name": "victor",
+    "surname": "potter",
+    "course": "THIRD",
+    "dateOfBirth": "1956-08-26",
+    "email": "dsfjsf",
+    "phoneNumber": 255854
+  },
+  {
+    "id": 46517,
+    "name": "mark",
+    "surname": "brown",
+    "course": "SECOND",
+    "dateOfBirth": "2003-11-25",
+    "email": "kdjsfk;asl",
+    "phoneNumber": 4558566
+  },
+  {
+    "id": 24620,
+    "name": "oleg",
+    "surname": "rusnak",
+    "course": "FIRST",
+    "dateOfBirth": "2004-06-24",
+    "email": "fdsfkjksal",
+    "phoneNumber": 4568435
+  }
+]
