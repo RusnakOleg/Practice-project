@@ -47,28 +47,32 @@ public class Main {
                     int id = RandomIdGenerator.generateRandomId();
                     System.out.println("Enter NAME:");
                     String name = command.nextLine();
+
                     System.out.println("Enter SURNAME:");
                     String surname = command.nextLine();
+
                     System.out.println("Enter EMAIL:");
                     String email = command.nextLine();
+
                     System.out.println("Enter PHONE NUMBER:");
+                    System.out.print("+38 ");
                     String phoneNumber = command.nextLine();
-                    System.out.println("Enter COURSE:");
+                    System.out.println("Enter COURSE: (first, second, ...)");
                     Course course = null;
                     String courseInput = command.nextLine().toUpperCase();
                     if (!courseInput.isEmpty()) {
                             course = Course.valueOf(courseInput);
                         }
                     System.out.println("Enter DATE OF BIRTH:");
-                    System.out.println("Enter YEAR");
+                    System.out.println("Enter YEAR (1956)");
                     int year = command.nextInt();
-                    System.out.println("Enter MONTH");
+                    System.out.println("Enter MONTH (08)");
                     int month = command.nextInt();
-                    System.out.println("Enter DAY");
+                    System.out.println("Enter DAY (24)");
                     int day = command.nextInt();
                     LocalDate dateOfBirth = null;
-                    if (year != 0 && month != 0 && day != 0) {
-                        dateOfBirth = LocalDate.of(year, month, day);
+                    if (year > 1900 && year < 2023  && month > 0 && month < 13 && day > 0 && day < 32) {
+                        dateOfBirth = LocalDate.of(year,month,day);
                     }
 
                     Student student = new Student(id, name, surname, course, dateOfBirth, email, phoneNumber);
@@ -94,12 +98,13 @@ public class Main {
                 }
                 case "sort" -> {
                     System.out.println("""
-                            For which criteria would you like to sort the students?
                             'name' - sort by name
                             'surname' - sort by surname
                             'age' - sort by date of birth
-                            'course' - sort by courses of students""");
+                            'course' - sort by courses of students
+                            For which criteria would you like to sort the students?""");
                     universityRepository.sortStudents(command.nextLine());
+                    System.out.println("List of students was successful sorted");
                 }
                 case "edit" -> {
                     System.out.println("Enter the id of student that you would like to edit");
@@ -137,16 +142,15 @@ public class Main {
                         }
                         case "dbo" -> {
                             System.out.println("Enter DATE OF BIRTH:");
-                            System.out.println("Enter YEAR");
-                            int year = sc.nextInt();
-                            System.out.println("Enter MONTH");
-                            int month = sc.nextInt();
-                            System.out.println("Enter DAY");
-                            int day = sc.nextInt();
+                            System.out.println("Enter YEAR (1956)");
+                            int year = command.nextInt();
+                            System.out.println("Enter MONTH (08)");
+                            int month = command.nextInt();
+                            System.out.println("Enter DAY (24)");
+                            int day = command.nextInt();
                             LocalDate dateOfBirth = null;
-
-                            if (year != 0 && month != 0 && day != 0) {
-                                dateOfBirth = LocalDate.of(year, month, day);
+                            if (year > 1900 && year < 2023  && month > 0 && month < 13 && day > 0 && day < 32) {
+                                dateOfBirth = LocalDate.of(year,month,day);
                             }
                             editStudent.setDateOfBirth(dateOfBirth);
                         }

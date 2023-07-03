@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0de9e542-9327-41cb-bbd3-561e5af8822f" name="Changes" comment="update classes for working with files">
+    <list default="true" id="0de9e542-9327-41cb-bbd3-561e5af8822f" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/domain/ActionsWithStudents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/domain/ActionsWithStudents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/domain/RandomIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/domain/RandomIdGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/domain/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/domain/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/domain/UniversityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/domain/UniversityRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/presentation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/presentation/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/GsonConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/GsonConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/JsonConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/JsonConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/LocalDateAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/LocalDateAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/StudentsDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/StudentsDataSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/student.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/student.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +120,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688337524331</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="initialize CRUD operations">
+      <created>1688345495111</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688345495111</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update">
+      <created>1688345615377</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1688345615377</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +170,8 @@
     <MESSAGE value="create 'class' student instead of 'record' student" />
     <MESSAGE value="initialise work with file" />
     <MESSAGE value="update classes for working with files" />
-    <option name="LAST_COMMIT_MESSAGE" value="update classes for working with files" />
+    <MESSAGE value="initialize CRUD operations" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
