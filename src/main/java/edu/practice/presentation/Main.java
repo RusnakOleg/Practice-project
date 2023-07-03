@@ -77,20 +77,22 @@ public class Main {
 
                     Student student = new Student(id, name, surname, course, dateOfBirth, email, phoneNumber);
                     universityRepository.addStudent(student);
+                    System.out.println("\n" + ANSI_GREEN + "New student was successfully added" + ANSI_RESET);
                 }
                 case "delete" -> {
                     System.out.println("Enter the id of student which you would like to delete:");
                     int idForRemove = command.nextInt();
                     universityRepository.deleteStudent(idForRemove);
+                    System.out.println("\n" + ANSI_GREEN + "Student was successfully deleted" + ANSI_RESET);
                 }
                 case "search" -> {
                     System.out.println("Enter the keyword to search:(name, surname, mail) ");
                     String keyword = command.nextLine();
                     List<Student> searchedStudents = universityRepository.searchStudent(keyword);
                     if (searchedStudents.isEmpty()) {
-                        System.out.println("No students found matching the search criteria.");
+                        System.out.println(ANSI_RED + "No students found matching the search criteria." + ANSI_RESET);
                     } else {
-                        System.out.println("Founded students: ");
+                        System.out.println(ANSI_GREEN + "Founded students: " + ANSI_RESET);
                         for (Student foundedStudents : searchedStudents) {
                             System.out.println(foundedStudents.toString());
                         }
@@ -102,9 +104,9 @@ public class Main {
                             'surname' - sort by surname
                             'age' - sort by date of birth
                             'course' - sort by courses of students
-                            For which criteria would you like to sort the students?""");
+                            By which criteria would you like to sort the students?""");
                     universityRepository.sortStudents(command.nextLine());
-                    System.out.println("List of students was successful sorted");
+                    System.out.println("\n" + ANSI_GREEN + "List of students was successful sorted" + ANSI_RESET);
                 }
                 case "edit" -> {
                     System.out.println("Enter the id of student that you would like to edit");
@@ -158,7 +160,7 @@ public class Main {
                             System.out.println("Enter PHONE NUMBER:");
                             editStudent.setPhoneNumber(sc.nextLine());
                         }
-                    }
+                    }System.out.println("\n" + ANSI_GREEN + "Data of student was changed successfully " + ANSI_RESET);
                 }
                 case "show" -> {
                     System.out.println("All students:");
@@ -166,11 +168,14 @@ public class Main {
                 }
                 case "exit" -> {
                     universityRepository.writeFile();
-                    System.out.println("Application was closed");
+                    System.out.println("\n" + ANSI_GREEN + "Data saved successfully" + ANSI_RESET);
                     return;
                 }
                 default -> System.out.println("Command not recognized!");
             }
         }
     }
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_RESET = "\u001B[0m";
 }
