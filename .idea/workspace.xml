@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0de9e542-9327-41cb-bbd3-561e5af8822f" name="Changes" comment="update other files">
+    <list default="true" id="0de9e542-9327-41cb-bbd3-561e5af8822f" name="Changes" comment="update classes for working with files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/domain/ActionsWithStudents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/domain/ActionsWithStudents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/domain/RandomIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/domain/RandomIdGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/domain/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/domain/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/domain/UniversityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/domain/UniversityRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/presentation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/presentation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/GsonConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/GsonConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/JsonConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/JsonConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/LocalDateAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/LocalDateAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/StudentsDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/StudentsDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/student.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/student.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +85,49 @@
       <option name="project" value="LOCAL" />
       <updated>1688211354295</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implemented general arch">
+      <created>1688301023072</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688301023072</updated>
+    </task>
+    <task id="LOCAL-00005" summary="made console interface for user">
+      <created>1688301122815</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688301122815</updated>
+    </task>
+    <task id="LOCAL-00006" summary="made random id generator">
+      <created>1688318354872</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688318354872</updated>
+    </task>
+    <task id="LOCAL-00007" summary="create 'class' student instead of 'record' student">
+      <created>1688318431299</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1688318431299</updated>
+    </task>
+    <task id="LOCAL-00008" summary="initialise work with file">
+      <created>1688326537299</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688326537299</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update classes for working with files">
+      <created>1688337524331</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1688337524331</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +157,12 @@
     <MESSAGE value="init commit" />
     <MESSAGE value="create the life cycle for console application" />
     <MESSAGE value="update other files" />
-    <option name="LAST_COMMIT_MESSAGE" value="update other files" />
+    <MESSAGE value="implemented general arch" />
+    <MESSAGE value="made console interface for user" />
+    <MESSAGE value="made random id generator" />
+    <MESSAGE value="create 'class' student instead of 'record' student" />
+    <MESSAGE value="initialise work with file" />
+    <MESSAGE value="update classes for working with files" />
+    <option name="LAST_COMMIT_MESSAGE" value="update classes for working with files" />
   </component>
 </project>
