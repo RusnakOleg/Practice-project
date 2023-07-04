@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0de9e542-9327-41cb-bbd3-561e5af8822f" name="Changes" comment="update output">
+    <list default="true" id="0de9e542-9327-41cb-bbd3-561e5af8822f" name="Changes" comment="update files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/domain/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/domain/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/presentation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/presentation/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/student.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/practice/workWithJson/student.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +146,28 @@
       <option name="project" value="LOCAL" />
       <updated>1688352124956</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update email info">
+      <created>1688458212823</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1688458212823</updated>
+    </task>
+    <task id="LOCAL-00015" summary="make obligatory to input date of birth">
+      <created>1688458262056</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1688458262056</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update files">
+      <created>1688458290404</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1688458290404</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,6 +206,9 @@
     <MESSAGE value="initialize CRUD operations" />
     <MESSAGE value="update" />
     <MESSAGE value="update output" />
-    <option name="LAST_COMMIT_MESSAGE" value="update output" />
+    <MESSAGE value="update email info" />
+    <MESSAGE value="make obligatory to input date of birth" />
+    <MESSAGE value="update files" />
+    <option name="LAST_COMMIT_MESSAGE" value="update files" />
   </component>
 </project>

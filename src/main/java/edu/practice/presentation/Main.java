@@ -83,7 +83,7 @@ public class Main {
                         if (year > 1900 && year < 2023 && month > 0 && month < 13 && day > 0 && day < 32) {
                             dateOfBirth = LocalDate.of(year, month, day);
                         } else {
-                            System.out.println(ANSI_RED + "Invalid date. Please enter a valid date" + ANSI_RESET);
+                            System.out.println(ANSI_RED + "Invalid date. Please enter a valid date" + "\n" + ANSI_RESET);
                         }
                     }
 
@@ -154,16 +154,21 @@ public class Main {
                             editStudent.setCourse(course);
                         }
                         case "dbo" -> {
-                            System.out.println("Enter DATE OF BIRTH:");
-                            System.out.println("Enter YEAR (1956)");
-                            int year = command.nextInt();
-                            System.out.println("Enter MONTH (08)");
-                            int month = command.nextInt();
-                            System.out.println("Enter DAY (24)");
-                            int day = command.nextInt();
                             LocalDate dateOfBirth = null;
-                            if (year > 1900 && year < 2023  && month > 0 && month < 13 && day > 0 && day < 32) {
-                                dateOfBirth = LocalDate.of(year,month,day);
+                            while (dateOfBirth == null) {
+                                System.out.println("Enter DATE OF BIRTH:");
+                                System.out.println("Enter YEAR (1956)");
+                                int year = command.nextInt();
+                                System.out.println("Enter MONTH (08)");
+                                int month = command.nextInt();
+                                System.out.println("Enter DAY (24)");
+                                int day = command.nextInt();
+
+                                if (year > 1900 && year < 2023 && month > 0 && month < 13 && day > 0 && day < 32) {
+                                    dateOfBirth = LocalDate.of(year, month, day);
+                                } else {
+                                    System.out.println(ANSI_RED + "Invalid date. Please enter a valid date" + "\n" + ANSI_RESET);
+                                }
                             }
                             editStudent.setDateOfBirth(dateOfBirth);
                         }
