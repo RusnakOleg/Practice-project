@@ -79,8 +79,14 @@ public class Student {
             sb.append("\n" + "Surname: ").append(surname.isEmpty() ? "-----" : surname);
             sb.append("\n" + "Course: ").append(course == null ? "-----" : course.toString());
             sb.append("\n" + "Date of Birth: ").append(dateOfBirth == null ? "-----" : dateOfBirth.toString());
-            sb.append("\n" + "Email: ").append(email.isEmpty() ? "-----" : email);
-            if(phoneNumber.length() == 10) {
+            if(email.length() > 12 && email.endsWith("@chnu.edu.ua"))
+                sb.append("\n" + "Email: ").append(email);
+            else if (email.isEmpty())
+                sb.append("\n" + "Email: ").append("-----");
+            else
+                sb.append("\n" + "Email: ").append("INCORRECT EMAIL");
+
+        if(phoneNumber.length() == 10) {
                 if(     phoneNumber.startsWith("039") || phoneNumber.startsWith("067") ||
                         phoneNumber.startsWith("068") || phoneNumber.startsWith("096") ||
                         phoneNumber.startsWith("097") ||phoneNumber.startsWith("098")){
