@@ -1,14 +1,5 @@
 [
   {
-    "id": 97883,
-    "name": "jason",
-    "surname": "derulo",
-    "course": "FIFTH",
-    "dateOfBirth": "2000-08-25",
-    "email": "derulo@.com",
-    "phoneNumber": "0502148757"
-  },
-  {
     "id": 25250,
     "name": "kris",
     "surname": "potter",
@@ -18,8 +9,17 @@
     "phoneNumber": "0915485630"
   },
   {
+    "id": 97883,
+    "name": "jason",
+    "surname": "derulo",
+    "course": "FIFTH",
+    "dateOfBirth": "2000-08-25",
+    "email": "derulo@.com",
+    "phoneNumber": "0502148757"
+  },
+  {
     "id": 62298,
-    "name": "victor",
+    "name": "harry",
     "surname": "hugo",
     "course": "FIRST",
     "dateOfBirth": "2003-05-26",
