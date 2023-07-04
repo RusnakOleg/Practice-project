@@ -7,7 +7,7 @@ import edu.practice.workWithJson.JsonConverter;
 import edu.practice.workWithJson.LocalDateAdapter;
 import edu.practice.workWithJson.StudentsDataSource;
 import java.time.LocalDate;
-import java.util.ArrayList;
+import   java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -20,8 +20,9 @@ public class Main {
         if (students == null) students = new ArrayList<>();
         UniversityRepository universityRepository = new UniversityRepository(studentsDataSource, students);
 
-        Scanner command = new Scanner(System.in);
         System.out.println("""
+                    \n
+                    -----------------------------------------------
                     MAIN COMMANDS:*****
                     "help" - show menu of commands
                     "add" - add a new student
@@ -29,12 +30,16 @@ public class Main {
                     "search" - search one or more students
                     "sort" - sort the list of student by criteria
                     "edit" - edit information about a student
-                    "exit" - saves all changes and exists program""" + "\n");
+                    "exit" - saves all changes and exists program
+                    -----------------------------------------------""" + "\n");
+
 
         while (true) {
+            Scanner command = new Scanner(System.in);
             System.out.println("\n" + "Enter command: ");
             switch (command.nextLine()) {
                 case "help" -> System.out.println("""
+                        -----------------------------------------------
                         MAIN COMMANDS:*****
                         "help" - show menu of commands
                         "add" - add a new student
@@ -42,7 +47,8 @@ public class Main {
                         "search" - search one or more students
                         "sort" - sort the list of student by criteria
                         "edit" - edit information about a student
-                        "exit" - saves all changes and exists program""" + "\n");
+                        "exit" - saves all changes and exists program
+                        -----------------------------------------------""" + "\n");
                 case "add" -> {
                     int id = RandomIdGenerator.generateRandomId();
                     System.out.println("Enter NAME:");
@@ -63,16 +69,22 @@ public class Main {
                     if (!courseInput.isEmpty()) {
                             course = Course.valueOf(courseInput);
                         }
-                    System.out.println("Enter DATE OF BIRTH:");
-                    System.out.println("Enter YEAR (1956)");
-                    int year = command.nextInt();
-                    System.out.println("Enter MONTH (08)");
-                    int month = command.nextInt();
-                    System.out.println("Enter DAY (24)");
-                    int day = command.nextInt();
+
                     LocalDate dateOfBirth = null;
-                    if (year > 1900 && year < 2023  && month > 0 && month < 13 && day > 0 && day < 32) {
-                        dateOfBirth = LocalDate.of(year,month,day);
+                    while (dateOfBirth == null) {
+                        System.out.println("Enter DATE OF BIRTH:");
+                        System.out.println("Enter YEAR (1956)");
+                        int year = command.nextInt();
+                        System.out.println("Enter MONTH (08)");
+                        int month = command.nextInt();
+                        System.out.println("Enter DAY (24)");
+                        int day = command.nextInt();
+
+                        if (year > 1900 && year < 2023 && month > 0 && month < 13 && day > 0 && day < 32) {
+                            dateOfBirth = LocalDate.of(year, month, day);
+                        } else {
+                            System.out.println(ANSI_RED + "Invalid date. Please enter a valid date" + ANSI_RESET);
+                        }
                     }
 
                     Student student = new Student(id, name, surname, course, dateOfBirth, email, phoneNumber);
@@ -103,7 +115,6 @@ public class Main {
                             'name' - sort by name
                             'surname' - sort by surname
                             'age' - sort by date of birth
-                            'course' - sort by courses of students
                             By which criteria would you like to sort the students?""");
                     universityRepository.sortStudents(command.nextLine());
                     System.out.println("\n" + ANSI_GREEN + "List of students was successful sorted" + ANSI_RESET);
